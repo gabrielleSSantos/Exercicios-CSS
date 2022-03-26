@@ -1,0 +1,82 @@
+/* DIV PARA O COMECO */
+.divPai{
+    width: 1300px;
+    height: 300px;
+    background-color: #964b00;
+    border: 15px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 80px; 
+}
+.divFilho{
+    background-color: white;
+    border: 10px solid rgb(6, 6, 77);
+    width: 80%;
+    height: 60%;
+    font-size: 25px;
+    font-family: arial;
+    font-weight: 1000;
+    color: blue;
+}
+/* DIV EM BTRANCO PARA DAR O ESPAÇO */
+.divVazia{
+    background-color: white;
+    height: 100px;
+    width: 100px;
+}
+/* DIV PARA CONTER AS OUTRAS DIVS E ALINHAR  */
+.divtudo{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+}
+.divAzul{
+    background-color: blue;
+    height: 40px;
+    width: 1200px;
+    
+}
+.divRoxo{
+    background-color: rgb(145, 18, 161);
+    height: 40px;
+    width: 700px;
+}
+.divVerde{
+    background-color: rgb(15, 187, 30);
+    height: 40px;
+    width: 1000px;
+}
+.divYellow{
+    background-color: rgb(231, 245, 35);
+    height: 40px;
+    width: 800px;
+}
+
+/* DIV EM BTRANCO PARA DAR O ESPAÇO */
+.divVazia2{
+    background-color: white;
+    height: 100px;
+    width: 100px;
+}
+.divtudo2{
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    align-items: center;
+}
+.divVermelho{
+    background-color: red;
+    height: 50px;
+    width: 1000px;
+}
+.divAzulDiferente{
+    background-color: blue;
+    height: 50px;
+    width: 1000px;
+}
+.divVerdeDiferente{
+    background-color: rgb(123, 230, 164);
+    height: 50px;
+    width: 1000px;
+}

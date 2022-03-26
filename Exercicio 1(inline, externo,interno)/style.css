@@ -1,0 +1,41 @@
+ .divA{
+    background-color: aqua;
+    height: 500px;
+    width: 500px;
+}
+ .divB{
+    background-color: blueviolet;
+    height: 50%;
+    width: 50%;
+}
+ .divC{
+    color: white;
+    background-color: red;
+    font-size: 25px;
+    font-family: monospace;
+    font-weight: 1000;
+    width: 50%;
+    height: 50%;
+}
+ .divD{
+    width: 50%;
+    height: 50vh;
+    background-color: rgb(161, 35, 245);
+}
+.divE{
+    width: 75vw;
+    height: 50%;
+    background-color: black;
+}
+/*     E) Crie outra div que:
+
+e1) Seja filha da div D);
+
+e2) Tenha 75% de largura da JANELA DE EXIBIÇÃO (viewport width);
+
+e3) Tenha 50% de altura do elemento PAI;
+
+e4) Tenha cor de fundo vermelha (utilize o RGB);
+
+
+         */
