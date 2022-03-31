@@ -1,0 +1,87 @@
+.flex-item {
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.base {
+    margin-bottom: 15px;
+    background-color: #d0d3d4;
+    border-radius: 4px;
+}
+
+.box1 {
+    background-color: #63b1bc;
+}
+
+.box2 {
+    background-color: #1f2a44;
+}
+
+.box3 {
+    background-color: #ed145b;
+}
+
+.box4 {
+    background-color: #efb661;
+}
+
+h1 {
+    margin: auto;
+}
+
+/* Insira o código abaixo */
+
+.container1 {
+    display: flex;    /* Esse deixa as coisas moverem na tela */
+    flex-direction: row;        /* Esse deixa as coisas em linha */
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row-reverse;  
+}
+
+.container3 {
+    display: flex;
+    flex-direction:row;
+    justify-content: center; /* Esse deixa as coisas no meio */
+    
+}
+.container4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* Esse faz com que as coisas fique com a mesma distancia exemplo:(a  b  c) ignorando a borda, fica grudado no container */
+
+}
+.container5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* Esse faz com que as coisas fique com a mesma distancia exemplo:(  a  b  c  ) 
+    considerando uma borda do container*/
+}
+.container6 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* Esse faz com que as coisas fique com a mesma distancia exemplo:(    a  b  c    ) 
+    considerando uma distancia maior na borda*/
+} 
+
+.container-exercicio-B{
+    display:flex;
+    flex-direction: column-reverse; 
+    /* Serve para deixar a direção ao contrario em coluna// exemplo ; 1 2 3 4 e vai ficar assim 4 3 2 1 */ 
+}
+
+.container-desafio{
+    display:flex;
+    flex-direction: row-reverse;
+    /* Serve para deixar a direção ao contrario em linha// exemplo ; 1 2 3 4 e vai ficar assim 4 3 2 1 */  
+    justify-content: left;
+    /* Coloquei pra esquerda atraves do left */
+}
