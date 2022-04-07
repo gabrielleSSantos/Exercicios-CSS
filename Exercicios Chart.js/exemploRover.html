@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Rover</title>
+    <!-- A TAG SCRIPT CHAMA A BIBLIOTECA -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body style="display: flex; ">
+        <div>
+        <!-- O CANVAS É COMO SE FOSSE UM QUADRO EM BRANCO PRO HTML DESENHAR 
+        A TAG ID É IMPORTANTE PQ VC VAI CHAMAR ELA LA EMBAIXO-->
+        <canvas id="myChart" style="height: 40vh; width: 40vw;"></canvas>
+      </div>
+        <!-- Criando outro grafico -->
+      <div>
+        <canvas id="myChart2" style="height: 40vh; width: 40vw;" ></canvas>
+      </div>
+</body>
+<script>
+    //Preparação pro grafico
+
+    // VETOR     
+    //  CONST DECLARA VARIAVEIS, ELA É CONSTANTE UMA VEZ DECLARADA ELA NÃO MUDA IGUAL O VAR
+
+    const labels = [
+      'January',
+      'February',
+      'March',
+      'April',
+      'May',
+      'June',
+    ];
+  
+    // CONSTANTE PARA DADOS 
+    // JSON
+    const data = {
+      labels: labels,
+    // AS linhas são feitas aqui 
+      datasets: [{
+        //   aqui é identificando o que essa linha faz 
+        label: 'My First dataset',
+        backgroundColor: 'rgb(255, 99, 132)',
+        borderColor: 'rgb(255, 99, 132)',
+        // aqui são os dados, são json, da pra fzr conta
+        data: [0, 10, 5, 2, 20, 30, 45],
+      }]
+    };
+  
+    // para configuração 
+    const config = {
+    // type para o tipo de graficos 
+      type: 'bar',
+    // data de dados, esta passando o datsets 
+      data: data,
+      options: {}
+    };
+
+     const config2 = {
+      type: 'line',
+      data: data,
+      options: {}
+    };
+  </script>
+
+  <script>
+    //  esta declando o grafico
+    const myChart = new Chart(
+      document.getElementById('myChart'),
+      config
+    );
+
+    const myChart2 = new Chart(
+      document.getElementById('myChart2'),
+      config2
+    );
+
+  </script>
+   
+</html>
