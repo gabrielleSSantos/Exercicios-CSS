@@ -22,8 +22,7 @@ var mySqlConfig = {
     host: "localhost",
     user: "aluno",
     database: "acquatec",
-    password: "sptech",  
-    // talvez não tenha senha 
+    password: "sptech",
 };
 
 function executar(instrucao) {
