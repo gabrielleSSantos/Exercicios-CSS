@@ -37,6 +37,8 @@ alter table usuario add column telefone varchar(14);
 
 select * from usuario;
 
+alter table usuario add column idade int;
+
 
 /* para sql server - remoto - produção */
 

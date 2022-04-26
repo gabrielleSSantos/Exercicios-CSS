@@ -82,6 +82,9 @@
                     <span class="tipo_campo"> Telefone: </span>
                     <input id="telefone_input" type="text" placeholder="943131977">
 
+                    <span class="tipo_campo">Idade: </span>
+                    <input id="idade_input" type="number" placeholder="14">
+
 
                     <button class="btn" onclick="cadastrar()">Cadastrar</button>
 
@@ -122,8 +125,9 @@
         var senhaVar = senha_input.value;
         var confirmacaoSenhaVar = confirmacao_senha_input.value;
         var telefoneVar = telefone_input.value;
+        var idadeVar = idade_input.value;
 
-        if (nomeVar == "" || cpfVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || telefoneVar == "" ) {
+        if (nomeVar == "" || cpfVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || telefoneVar == "" || idadeVar == "") {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "Preencha todos os campos para prosseguir!";
 
@@ -154,6 +158,16 @@
             setInterval(sumirMensagem, 5000)
         }
 
+        if (idadeVar < 14) {
+            cardErro.style.display = "block"
+            mensagem_erro.innerHTML = "Voce não tem idade para isso";
+            finalizarAguardar();
+            return false;
+        }
+        else {
+            setInterval(sumirMensagem, 5000)
+        }
+
         // Enviando o valor da nova input
         fetch("/usuarios/cadastrar", {
             method: "POST",
@@ -167,7 +181,8 @@
                 cpfServer: cpfVar,
                 emailServer: emailVar,
                 senhaServer: senhaVar,
-                telefoneServer: telefoneVar
+                telefoneServer: telefoneVar,
+                idadeServer: idadeVar
             })
         }).then(function (resposta) {
 
