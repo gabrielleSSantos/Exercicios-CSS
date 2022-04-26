@@ -10,6 +10,7 @@ USE acquatec;
 CREATE TABLE usuario (
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	nome VARCHAR(50),
+    cpf varchar(12),
 	email VARCHAR(50),
 	senha VARCHAR(50)
 );
@@ -30,7 +31,11 @@ CREATE TABLE medida (
 	fk_aquario INT
 );
 
+describe usuario;
 
+alter table usuario add column telefone varchar(14);
+
+select * from usuario;
 
 
 /* para sql server - remoto - produção */
